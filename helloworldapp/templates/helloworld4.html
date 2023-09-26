@@ -1,0 +1,8 @@
+{% extends "helloworld2.html" %}
+{% block body %}
+    <ul>
+{% for person in person_lst %}
+ <li style="color:{% cycle 'black' 'blue' 'green' %}">Hello World {{ person.name }} ({{ person.age }})!</li>
+{% endfor %}
+</ul>
+{% endblock %}
